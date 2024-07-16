@@ -14,19 +14,20 @@ public class App {
         output("Blick von innen: " + cat.getInstanceVariable());
 
 
-        cat.furColor = "grey";
-        output(cat.furColor);
+        // cat.furColor = "grey";
+        // output(cat.furColor);
+        
         // //Werte setzen
         // cat.name = "Grizabella";
         // cat.furColor = "white";
         // cat.age = 29;
 
         // Werte ausgeben
-        output(cat.name);
-        output(cat.furColor);
+        output(cat.getName());
+        output(cat.getFurColor());
         //Explizite Typumwandlung
         // output("age:" + cat.age);
-        output(Integer.toString(cat.age));
+        output(Integer.toString(cat.getAge()));
 
 
 
@@ -49,10 +50,12 @@ public class App {
 
 
         // Werte ausgeben
-        output(cat2.name);
-        output(cat2.furColor);
-        output(Integer.toString(cat2.age)); // Explizite Typumwandlung
-
+        output(cat2.getName());
+        output(cat2.getFurColor());
+        output(Integer.toString(cat2.getAge())); // Explizite Typumwandlung
+        
+        cat2.setAge(36);
+        output(Integer.toString(cat2.getAge()));
 
     }
 
