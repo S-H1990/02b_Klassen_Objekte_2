@@ -5,11 +5,21 @@ public class Cat {
     //Felder/ fields/Attributes
 
     //pass by Reference
-    String name = "Grizabella";
-    String furColor = "White";
+    public String name = "Grizabella";
+    public String furColor = "White";
+     //pass by value
+    public int age = 29;
 
-    //pass by value
-    int age;
+
+
+
+
+
+    public Cat(String name, String furColor, int age) {
+        this.name = name;
+        this.furColor = furColor;
+        this.age = age;
+    }
 
 
 
